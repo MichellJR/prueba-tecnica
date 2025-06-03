@@ -1,61 +1,52 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 📦 Sistema de Gestión de Productos con Laravel y React
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Este es un sistema robusto para la gestión de productos, construido utilizando Laravel para el backend (API RESTful) y React para el frontend (interfaz de usuario). Permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre los productos, incluyendo paginación y manejo de estado.
 
-## About Laravel
+## ✨ Características Principales
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+* **Backend con Laravel:**
+    * API RESTful para la gestión de productos.
+    * Validación de datos robusta con Form Requests.
+    * Paginación de productos.
+    * Manejo de operaciones CRUD (Crear, Leer, Actualizar, Eliminar).
+* **Frontend con React:**
+    * Interfaz de usuario dinámica y reactiva.
+    * Gestión de estado con React Hooks (`useState`, `useEffect`, `useCallback`).
+    * Comunicación con la API backend a través de Axios.
+    * Componentes reutilizables para la lista, paginación, formularios y mensajes de estado.
+    * Estilos con Bootstrap.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🛠️ Tecnologías Utilizadas
 
-## Learning Laravel
+**Backend:**
+* **PHP**
+* **Laravel Framework** (versión específica, si la sabes, ej. `^10.0`)
+* **Laravel Sail** (para entorno de desarrollo Docker)
+* **MySQL / PostgreSQL** (o la base de datos que uses con Sail)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+**Frontend:**
+* **JavaScript (ES6+)**
+* **React.js** (versión específica, si la sabes, ej. `^18.2.0`)
+* **Vite** (como herramienta de bundling y servidor de desarrollo)
+* **Axios** (cliente HTTP para peticiones a la API)
+* **Bootstrap** (framework CSS para el diseño)
+* **React Router DOM** (si planeas usar enrutamiento en el frontend)
+* **Bootstrap Icons** (si los utilizas)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🚀 Puesta en Marcha
 
-## Laravel Sponsors
+Para poner en marcha este proyecto, sigue los siguientes pasos. Se asume que tienes **Docker** instalado y funcionando en tu sistema, ya que el proyecto utiliza **Laravel Sail**.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 3. Ejecuta el Script de Instalación y Configuración del Entorno
 
-### Premium Partners
+Este script `setup.sh` se encarga de **armar los contenedores Docker con Laravel Sail**, instalar todas las dependencias necesarias para el backend y el frontend, y realizar las configuraciones iniciales de la base de datos.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+```bash
+# Asegúrate de darle permisos de ejecución si aún no lo has hecho: chmod +x setup.sh
+./setup.sh
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+nota: para ejecutarlo pon sh setup
