@@ -22,18 +22,18 @@ Este es un sistema robusto para la gestión de productos, construido utilizando 
 
 **Backend:**
 * **PHP**
-* **Laravel Framework** (versión específica, si la sabes, ej. `^10.0`)
+* **Laravel Framework** (v12`)
 * **Laravel Sail** (para entorno de desarrollo Docker)
-* **MySQL / PostgreSQL** (o la base de datos que uses con Sail)
+* **MySQL**
 
 **Frontend:**
 * **JavaScript (ES6+)**
-* **React.js** (versión específica, si la sabes, ej. `^18.2.0`)
+* **React.js** (^19.1.0)
 * **Vite** (como herramienta de bundling y servidor de desarrollo)
 * **Axios** (cliente HTTP para peticiones a la API)
 * **Bootstrap** (framework CSS para el diseño)
-* **React Router DOM** (si planeas usar enrutamiento en el frontend)
-* **Bootstrap Icons** (si los utilizas)
+* **React Router DOM**
+* **Bootstrap Icons**
 
 ---
 
