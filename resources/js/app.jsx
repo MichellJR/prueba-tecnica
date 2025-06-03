@@ -6,6 +6,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import App from './RouterConfig';
 
 
 const appElement = document.getElementById('app');
@@ -14,7 +15,7 @@ const appElement = document.getElementById('app');
 if (appElement) {
     ReactDOM.createRoot(appElement).render(
         <React.StrictMode>
-            <h1>hola</h1>
+            <App/>
         </React.StrictMode>
     );
 }
